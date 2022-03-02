@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài Tập Javascript-2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!-- Tính lương -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">Tổng lương làm việc</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Cấp bậc lương</label>
+                <select id="money-day" class="form-control">
+                  <option>100000</option>
+                  <option>200000</option>
+                  <option>300000</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Số ngày làm việc</label>
+                <input
+                  id="day"
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập số ngày làm việc"
+                />
+              </div>
+              <button id="btn-calc" class="btn btn-success">Tính lương</button>
+            </div>
+            <div id="notification" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tính trung bình -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">Tính trung bình 5 số</div>
+            <div class="card-body average-input">
+              <div class="form-group">
+                <label>Nhập số tùy thích</label>
+                <input
+                  id="num1"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập số thứ 1"
+                />
+                <input
+                  id="num2"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập số thứ 2"
+                />
+                <input
+                  id="num3"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập số thứ 3"
+                />
+                <input
+                  id="num4"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập số thứ 4"
+                />
+                <input
+                  id="num5"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập số thứ 5"
+                />
+              </div>
+              <button id="btn-average" class="btn btn-danger">
+                Tính Trung Bình
+              </button>
+            </div>
+            <div id="average" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- USD to VND -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">Quy đổi tiền tệ</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Giá USD hiện tại</label>
+                <input
+                  id="price-vnd"
+                  type="text"
+                  class="form-control"
+                  value="23500"
+                />
+              </div>
+              <div class="form-group">
+                <label>Nhập USD</label>
+                <input
+                  id="price-usd"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập mức USD muốn quy đổi"
+                />
+              </div>
+              <button id="change" class="btn btn-warning">Chuyển đổi</button>
+            </div>
+            <div id="in-money" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tính S, P -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">Tính chu vi, diện tích hình chữ nhật</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập chiều rộng hình chữ nhật</label>
+                <input
+                  id="long"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập số"
+                />
+              </div>
+              <div class="form-group">
+                <label>Nhập chiều dài hình chữ nhật</label>
+                <input
+                  id="wide"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập số"
+                />
+              </div>
+              <button id="calcAll" class="btn btn-primary">Tính kết quả</button>
+            </div>
+            <div id="print-result" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tính tổng 2 số -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">Tính tổng 2 ký số</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập số bất kỳ</label>
+                <input id="number" type="number" class="form-control" placeholder="Nhập số 2 tới 4 chữ số">
+              </div>
+              <button id="calc-sum" class="btn btn-dark">Tính tổng ký số</button>
+            </div>
+            <div id="print-sum" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>

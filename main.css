@@ -1,0 +1,9 @@
+.average-input label {
+  display: block;
+}
+
+.average-input .form-control {
+  display: inline-block;
+  width: 18%;
+  margin: 0 8px;
+}
