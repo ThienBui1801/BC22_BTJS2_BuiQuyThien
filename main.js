@@ -19,7 +19,7 @@ document.getElementById('btn-calc').onclick = function () {
   const sumSalary = currentFormat.format(money * day);
   // console.log(sumSalary);
   document.getElementById('notification').innerHTML =
-    `<p>Số ngày làm việc của bạn: ${day}, lương ngày ${daySalary} VNĐ. Tổng lương của bạn là ${sumSalary} VNĐ</p>`;
+    `<p class='alert alert-danger'>Số ngày làm việc của bạn: ${day}, lương ngày ${daySalary} VNĐ. Tổng lương của bạn là ${sumSalary} VNĐ</p>`;
 };
 
 // Tính trung bình
@@ -40,7 +40,7 @@ document.getElementById('btn-average').onclick = function () {
   const num5 = document.getElementById('num5').value;
   const calcAverage = (Number(num1) + Number(num2) + Number(num3) + Number(num4) + Number(num5)) / 5;
   document.getElementById('average').innerHTML =
-    `<p>Số trung bình: ${calcAverage}</p>`
+    `<p class='alert alert-danger'>Số trung bình: ${calcAverage}</p>`
 };
 
 // Quy đổi tiền
@@ -61,7 +61,7 @@ document.getElementById('change').onclick = function () {
   const usd = currentMoneyUsd.format(usdMoney);
   const changeMoney = currentMoneyVnd.format(vndMoney * usdMoney);
   document.getElementById('in-money').innerHTML =
-    `<p>Số tiền quy đổi từ ${usd} USD sang VNĐ của bạn: ${changeMoney}</p>`
+    `<p class='alert alert-danger'>Số tiền quy đổi từ ${usd} USD sang VNĐ của bạn: ${changeMoney}</p>`
 };
 
 // Tính chu vi, diện tích
@@ -80,7 +80,7 @@ document.getElementById('calcAll').onclick = function () {
   const chuVi = (Number(long) + Number(wide)) * 2;
   const dienTich = Number(long) * Number(wide);
   document.getElementById('print-result').innerHTML =
-    `<p>Chu vi hình chữ nhật: ${chuVi} và diện tích hình chữ nhật: ${dienTich}</p>`
+    `<p class='alert alert-danger'>Chu vi hình chữ nhật: ${chuVi} và diện tích hình chữ nhật: ${dienTich}</p>`
 };
 
 // Tính tổng ký số
@@ -104,5 +104,5 @@ document.getElementById('calc-sum').onclick = function () {
   const hangTram = Math.floor(number % 1000 / 100);
   const hangNgan = Math.floor(number / 1000);
   const sumKySo = donVi + hangChuc + hangTram + hangNgan;
-  document.getElementById('print-sum').innerHTML = `<p>Tổng ký số là ${sumKySo}</p>`;
+  document.getElementById('print-sum').innerHTML = `<p class='alert alert-danger'>Tổng ký số là ${sumKySo}</p>`;
 }
